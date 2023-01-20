@@ -30,7 +30,7 @@ if($s=="baidu"){  //百度
 } else if($s=="sogou"){ //搜狗
     $data=GET("https://pic.sogou.com/napi/pc/searchList?mode=1&start=$p&query=$q");
     $json=json_decode($data[0],true);
-    $size=rand(0,count($json["data"]["items"]));//搜狗不能控制返回数量
+    $size=rand(0,count($json["data"]["items"])-1);//搜狗不能控制返回数量
     $imgurl=$json["data"]["items"][$size]["picUrl"];
     $thumburl=$json["data"]["items"][$size]["thumbUrl"];
 } else if($s=="shenma"){ //神马

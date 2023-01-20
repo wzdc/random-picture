@@ -50,6 +50,8 @@ if($type=="img") {
 header("location:$thumburl");
 else if($type=="redirect")
 header("location:$imgurl");
+else if($type=="download")
+header("location:  https://image.baidu.com/search/down?tn=download&ipn=dwnl&word=download&ie=utf8&fr=result&url=".urlencode($imgurl)."&thumburl=".urlencode($thumburl));
 else {
     header('Content-Type: application/json');
     echo json_encode(array("url" => $imgurl,"thumburl" => $thumburl,"download" => "https://image.baidu.com/search/down?tn=download&ipn=dwnl&word=download&ie=utf8&fr=result&url=".urlencode($imgurl)."&thumburl=".urlencode($thumburl),"p"=>$p),JSON_UNESCAPED_UNICODE);

@@ -36,6 +36,15 @@
 
 ## 返回成功示例
 
+```json
+{
+    "url": "http://i0.hdslb.com/bfs/article/fe192e64dae02b5fed42df441e2579c855b51bce.jpg",
+    "thumburl": "https://kkimgs.yisou.com/ims?kt=url&at=smstruct&key=aHR0cDovL2kwLmhkc2xiLmNvbS9iZnMvYXJ0aWNsZS9mZTE5MmU2NGRhZTAyYjVmZWQ0MmRmNDQxZTI1NzljODU1YjUxYmNlLmpwZw==&sign=yx:HufPonuXWhp4CgJ-nIqA1HUzjvc=&tv=400_400",
+    "download": "https://image.baidu.com/search/down?tn=download&ipn=dwnl&word=download&ie=utf8&fr=result&url=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Ffe192e64dae02b5fed42df441e2579c855b51bce.jpg&thumburl=https%3A%2F%2Fkkimgs.yisou.com%2Fims%3Fkt%3Durl%26at%3Dsmstruct%26key%3DaHR0cDovL2kwLmhkc2xiLmNvbS9iZnMvYXJ0aWNsZS9mZTE5MmU2NGRhZTAyYjVmZWQ0MmRmNDQxZTI1NzljODU1YjUxYmNlLmpwZw%3D%3D%26sign%3Dyx%3AHufPonuXWhp4CgJ-nIqA1HUzjvc%3D%26tv%3D400_400",
+    "p": 41
+}
+```
+
 ## 返回失败
 
 1. 缺少参数或search参数错误则页面会空白

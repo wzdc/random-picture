@@ -1,14 +1,14 @@
 <?php
 header("Access-Control-Allow-Origin:*"); //接受所有访问
+error_reporting(E_ALL & ~(E_NOTICE | E_WARNING)); // 不显示 Notice 和 WARNING 错误
 $s=$_REQUEST["source"];
 $type=$_REQUEST["type"];
 $r=explode(",",$_REQUEST["random"]);
-if(!$_REQUEST["source"]||!$s)
-exit;
+if(!$_REQUEST["source"]||!$s) exit;
 
-if(is_Mobile()&&$_REQUEST["pesearch"])
+if(is_Mobile()&&$_REQUEST["pesearch"]) 
 $q=urlencode($_REQUEST["pesearch"]);
-else
+else 
 $q=urlencode($_REQUEST["search"]);
 
 
@@ -59,7 +59,7 @@ else {
 
 function GET($url) {
 $headers[]  =  "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";
-$headers[]  =  "Accept-Encoding: gzip, deflate, br";
+//$headers[]  =  "Accept-Encoding: gzip, deflate, br";
 $headers[]  =  "Accept-Language: zh-CN,zh;q=0.9,zh-HK;q=0.8,zh-TW;q=0.7";
 $headers[]  =  "Cache-Control: max-age=0";
 $headers[]  =  "Connection: keep-alive";
